@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.signup-form {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.signup-form:hover {
+  transform: scale(1.01);
+}
+
+.signup-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-form button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.signup-form button:hover {
+  background-color: #166fe5;
+}
+
+.signup-form {
+  animation: formEntry 0.5s ease-in-out;
+}
+
+.submitted-data {
+  margin: 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .signup-form {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .submitted-data {
+    width: 85%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2px;
+}
+
+thead {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 2px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Optional: Add some spacing between table rows */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
