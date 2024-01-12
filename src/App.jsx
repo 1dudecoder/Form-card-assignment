@@ -81,7 +81,7 @@ function App() {
         </select>
 
         <button type="button" onClick={handleSubmit}>
-          Sign Up
+          Submit
         </button>
       </div>
 
